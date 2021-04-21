@@ -1,0 +1,118 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.pgae_header {
+    margin-bottom: 50px;
+}
+
+.cta {
+    background-color: lightgreen;
+}
+
+.logo_ny {
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*---Burgermenu og menubar---*/
+.navitation__container {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(34, 65, 178, 0.21);
+}
+
+.mobileiconlable {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+.menuitem {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.menuitem:hover {
+    background-color: gray;
+    color: black;
+}
+
+.active_menu {
+    background-color: gray;
+    color: black;
+    border-radius: 1px;
+}
+
+.menuitems__container,
+.mobileicon {
+    display: none;
+}
+
+.navigation__container input:checked ~ .menuitems__container {
+    display: block;
+}
+
+/*---slut på menu---*/
+
+.footer {
+    background-color: gray;
+    padding: 10px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+}
+
+.footer_tekst {
+    font-size: 0.7rem;
+}
+
+@media only screen and (min-width:900px) {
+    body {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /*---Burgermenu og menubar---*/
+    .mobileiconlabel,
+    .mobileicon {
+        display: none;
+    }
+
+    .menuitems__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuitem {
+        padding: 10px 20px;
+    }
+
+    .mobileiconlable {
+        display: none;
+    }
+
+    /*---slut på menu---*/
+
+    .footer {
+        width: 96%;
+    }
+
+    .footer_tekst {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,151 @@
+.page_form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overskrift {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.velkommen {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.person {
+    width: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.om_person {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.farve {
+    background-color: lightgreen;
+    width: 300px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+    display: none;
+}
+
+@media only screen and (min-width:650px) {
+    .person {
+        width: 420px;
+    }
+
+    .om_person {
+        width: 400px;
+    }
+
+    .farve {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .udvalg {
+        display: none;
+    }
+
+    .velkommen {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .person {
+        width: 470px;
+    }
+
+    .om_person {
+        font-size: 1rem;
+        width: 450px;
+        padding: 10px 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "didde om_didde . ."
+            "om_andreas andreas . ."
+            "silje om_silje . ."
+            "om_hugo hugo . ."
+            "mette om_mette . ."
+            "om_martin martin . .";
+    }
+
+    .didde {
+        grid-area: didde;
+    }
+
+    .om_didde {
+        grid-area: om_didde;
+        background-color: lightgreen;
+    }
+
+    .andreas {
+        grid-area: andreas;
+    }
+
+    .om_andreas {
+        grid-area: om_andreas;
+        background-color: lightgreen;
+    }
+
+    .silje {
+        grid-area: silje;
+    }
+
+    .om_silje {
+        grid-area: om_silje;
+        background-color: lightgreen;
+    }
+
+    .hugo {
+        grid-area: hugo;
+    }
+
+    .om_hugo {
+        grid-area: om_hugo;
+        background-color: lightgreen;
+    }
+
+    .mette {
+        grid-area: mette;
+    }
+
+    .om_mette {
+        grid-area: om_mette;
+        background-color: lightgreen;
+    }
+
+    .martin {
+        grid-area: martin;
+    }
+
+    .om_martin {
+        grid-area: om_martin;
+        background-color: lightgreen;
+    }
+}

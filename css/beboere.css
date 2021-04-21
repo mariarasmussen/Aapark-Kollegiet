@@ -1,0 +1,69 @@
+body {
+    margin: 10px 10px;
+}
+
+.grid-container {
+    display: none;
+}
+
+.video_bg {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.bg_vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overskrift {
+    text-align: center;
+}
+
+.farve {
+    background-color: lightgreen;
+}
+
+@media only screen and (min-width:650px) {
+    .video_bg {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .video_bg {
+        height: 500px;
+    }
+
+    .bebo {
+        display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "insta tekst";
+    }
+
+    .insta {
+        grid-area: insta;
+    }
+
+    .tekst {
+        grid-area: tekst;
+        background-color: lightgreen;
+        padding: 10px 20px;
+    }
+}

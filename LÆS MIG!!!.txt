@@ -1,0 +1,3 @@
+Hjemmesidens 2 videoer er for store til at github vil tage imod dem. 
+Derfor er de ikke en del af repo. Dog kan de ses på hjemmesiden.
+www.mariarasmussen.dk

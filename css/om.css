@@ -1,0 +1,122 @@
+.motiongraph {
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: none;
+}
+
+.velkommen {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.øvrig {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.tekst {
+    width: 300px;
+    font-size: 0.8rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.farve {
+    background-color: lightgreen;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.maps {
+    width: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width:650px) {
+    .motiongraph {
+        width: 420px;
+    }
+
+    .tekst {
+        width: 400px;
+    }
+
+    .farve {
+        width: 400px;
+    }
+
+    .maps {
+        width: 420px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .motiongraph {
+        width: 600px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .velkommen {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .tekst {
+        font-size: 1rem;
+        width: 450px;
+        padding: 10px 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "om fælles"
+            "facil øvrigt";
+    }
+
+    .om {
+        grid-area: om;
+        background-color: lightgreen;
+    }
+
+    .fælles {
+        grid-area: fælles;
+    }
+
+    .facil {
+        grid-area: facil;
+    }
+
+    .øvrigt {
+        grid-area: øvrigt;
+        background-color: lightgreen;
+    }
+
+    .maps {
+        width: 700px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
